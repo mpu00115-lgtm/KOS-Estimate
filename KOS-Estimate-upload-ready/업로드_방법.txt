@@ -1,0 +1,37 @@
+﻿KOS GitHub 업로드 방법
+
+방법 1: GitHub 웹에서 ZIP 전체 업로드
+
+1. KOS-Estimate-upload-ready.zip을 컴퓨터에 다운로드합니다.
+2. ZIP을 완전히 압축 해제합니다.
+3. 압축 해제한 KOS-Estimate-upload-ready 폴더 안으로 들어갑니다.
+4. GitHub 저장소 https://github.com/mpu00115-lgtm/KOS-Estimate 를 엽니다.
+5. 저장소에서 Add file → Upload files를 누릅니다.
+6. 압축 해제 폴더 안의 모든 파일과 폴더를 선택해서 GitHub 업로드 화면으로 끌어놓습니다.
+   - .github
+   - installer
+   - src
+   - KOS.sln
+   - README.md
+   - .gitignore
+7. 아래 Commit changes 제목에 다음처럼 입력합니다.
+   KOS first integrated Windows build
+8. Commit directly to the main branch를 선택합니다.
+9. Commit changes를 누릅니다.
+10. 저장소 상단 Actions를 누릅니다.
+11. Build KOS Windows 작업이 자동 시작되는지 확인합니다.
+12. 완료 후 작업 화면 아래 Artifacts에서 KOS-Windows-Test를 다운로드합니다.
+
+중요:
+ZIP 파일 자체를 저장소에 올리는 것이 아니라 ZIP을 풀고 그 안의 파일과 폴더를 올려야 합니다.
+
+방법 2: GitHub Desktop
+
+1. GitHub Desktop 설치
+2. File → Clone repository
+3. mpu00115-lgtm/KOS-Estimate 선택
+4. 이 패키지의 압축을 풀고 내용 전체를 복제된 저장소 폴더에 복사
+5. GitHub Desktop에서 Summary 입력
+6. Commit to main
+7. Push origin
+8. GitHub Actions에서 빌드 확인
